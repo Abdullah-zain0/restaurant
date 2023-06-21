@@ -2,6 +2,7 @@ import Image from 'next/image'
 import people from '../public/images/6again.jpg'
 import Header from './components/Header'
 import RestaurantCard from './components/RestaurantCard'
+import SearchBar from './components/SearchBar'
 
 
 export default function Home() {
@@ -10,7 +11,8 @@ export default function Home() {
   return (
     <>
     <Header/>
-    <div className='flex px-36 py-3 flex-wrap mt-10 justify-center'>
+    <div className='flex sm:px-16 px:3 sm:py-3 py-0 flex-wrap mt-10 justify-center'>
+    
     {
       restaurant.map(res =>(
         <RestaurantCard/>

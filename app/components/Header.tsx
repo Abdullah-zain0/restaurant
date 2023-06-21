@@ -1,3 +1,5 @@
+import SearchBar from "./SearchBar";
+
 function Header() {
     return (  
         <div className="h-64   border-collapse fill-yellow-500 rounded-br-lg rounded-bl-lg border-2 border-t-0 border-r-indigo-600 border-b-indigo-600 border-l-indigo-600 " 
@@ -7,7 +9,7 @@ function Header() {
       backgroundPosition: 'left' 
     }}
     >
-     
+     <SearchBar/>
     </div>
     );
 }

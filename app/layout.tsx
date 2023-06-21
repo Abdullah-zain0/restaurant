@@ -18,8 +18,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body lang='en'>
-      <main className="bg-red-200 min-h-screen w-screen m-0 p-0">
-      <main className="max-w-screen-2xl m-auto bg-white w-screen">
+      <main className="bg-red-200 min-h-screen  m-0 p-0">
+      <main className="max-w-screen-2xl m-auto bg-white w-full">
         <NavBar />
        
         {children}
@@ -29,3 +29,14 @@ export default function RootLayout({
     </html>
   )
 }
+// AFTER
+{/* <main className="bg-red-200 min-h-screen  m-0 p-0">
+      <main className="max-w-screen-2xl m-auto bg-white  w-full"></main> */}
+
+// AFTER
+
+// BEFORE
+{/* <main className="bg-red-200 min-h-screen w-screen m-0 p-0">
+      <main className="max-w-screen-2xl m-auto bg-white w-screen"></main> */}
+
+      //BEFORE
